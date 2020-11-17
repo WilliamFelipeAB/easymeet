@@ -12,21 +12,6 @@ const calendar = google.calendar({version:'v3',auth: oauth2client});
 
 export default {
     async index (req:Request, res: Response){
-        const event = {
-            summary: 'teste do easy meet',
-            location: 'Rua Safira 345 Camobi Santa Maria',
-            description: 'teste do easy meet descricao',
-            start:{
-                dateTime: new Date().getDay()+1,
-                timeZone: 'Brasilia'
-            },
-            end:{
-                dateTime: new Date().getDay()+2,
-                timeZone: 'Brasilia'
-            },
-            colorId: 1,
-    
-        }
         const calendarlist = await calendar.events.list({calendarId:'primary'})
         // const response = calendar.events.insert({calendarId:'prima'},err=>{})
         return res.status(200).json(calendarlist);
@@ -42,9 +27,9 @@ export default {
             "colorId": "my_colorId",
             "conferenceData": {},
             "created": "my_created",
-            "creator": {},
+            "creator": {displayName:'Pedro'},
             "description": description,
-            "end": {},
+            "end": {date:enddatetime},
             "endTimeUnspecified": false,
             "etag": "my_etag",
             "extendedProperties": {},
@@ -67,7 +52,7 @@ export default {
             "reminders": {},
             "sequence": 0,
             "source": {},
-            "start": {date:'2020-11-13'},
+            "start": {date:startdatetime},
             "status": "my_status",
             "summary": summary,
             "transparency": "my_transparency",
