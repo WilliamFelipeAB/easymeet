@@ -6,7 +6,8 @@ export default{
         return{
             id: evento.id,
             descricao: evento.descricao,
-            data: evento.data,
+            datahorainicio: evento.datahorainicial,
+            datahorafinal: evento.datahorafinal,
             vagas_total: evento.vagas_total,
             vagas_preenchidas: evento.vagas_preenchidas,
             responsavel: evento.responsavel,

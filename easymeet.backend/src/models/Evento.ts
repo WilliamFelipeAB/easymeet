@@ -15,7 +15,13 @@ export default class Evento {
     descricao: string;
 
     @Column()
-    data: Date;
+    tipo: number;
+
+    @Column()
+    datahorainicial: Date;
+
+    @Column()
+    datahorafinal: Date;
 
     @Column()
     vagas_total: number;

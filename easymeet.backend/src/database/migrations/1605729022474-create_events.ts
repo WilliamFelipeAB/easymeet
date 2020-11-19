@@ -20,12 +20,20 @@ export class createEvents1605729022474 implements MigrationInterface {
                     type: 'varchar',
                 },
                 {
+                    name:'tipo',
+                    type: 'integer'
+                },
+                {
                     name: 'descricao',
                     type: 'text'
                 },
                 {
-                    name: 'data',
-                    type: 'date'
+                    name: 'datahorainicial',
+                    type: 'datetime'
+                },
+                {
+                    name: 'datahorafinal',
+                    type: 'datetime'
                 },
                 {
                     name: 'vagas_total',

@@ -34,7 +34,9 @@ export default {
         const {
             nome,
             descricao,
-            data,
+            tipo,
+            datahorainicial,
+            datahorafinal,
             vagas_total,
             vagas_preenchidas,
             responsavel,
@@ -51,7 +53,9 @@ export default {
         const evento = eventoRepository.create({
             nome,
             descricao,
-            data,
+            tipo,
+            datahorainicial,
+            datahorafinal,
             vagas_total,
             vagas_preenchidas,
             responsavel,
