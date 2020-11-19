@@ -1,2 +1,0 @@
-# easymeet
-Easy Meet

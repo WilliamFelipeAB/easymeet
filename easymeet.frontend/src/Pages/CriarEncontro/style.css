@@ -1,0 +1,106 @@
+#page-criar {
+    width: 100vw;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.form-create-container{
+    background: #636369;
+    width: 40%;
+    min-width: 350px;
+    height: 60%;
+    min-height: 500px;
+    border-radius: 4px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.form-create {
+    height: 80%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.form-create-container legend {
+    font-weight: 400;
+    font-size: 40px;
+    text-align: center;
+    margin-top: 36px;
+    margin-bottom: 30px;
+}
+
+.form-create .input-block{
+    display: flex;
+    flex-direction: column;
+    width: 80%;
+}
+
+.form-create .input-block label{
+    font-weight: 500;
+    font-size: 12px;
+    margin-bottom: 3px;
+    text-align: start;
+}
+
+.form-create .input-block input, textarea{
+    outline: none;
+    border-radius: 4px;
+    border: none;
+    margin-bottom: 10px;
+    padding: 4px 4px;
+    height: 30px;
+
+}
+
+.form-create .input-block textarea {
+    height: 80px;
+    resize: none;
+}
+
+.form-create .input-block-horizontal {
+    display: flex;
+    flex-direction: row;
+    width: 80%  ;
+}
+
+.form-create .input-block-horizontal input[type="date"] {
+    width: 90%;
+    height: 30px;
+} 
+
+.form-create button {
+    min-height: 40px;
+    min-width: 30%;
+    font-weight: 500;
+    transition: 0.3s;
+    border-radius: 4px;
+    outline: none;
+    border: none;
+    margin-top: 20px;
+}
+
+.form-create button:hover {
+    background: chartreuse;
+}
+
+@media(max-width:1000px){
+    .form-create-container legend {
+        font-size: 28px;
+    }
+    .form-create .input-block{
+        width: 100%;
+    }
+    .form-create .input-block-horizontal {
+        width: 100%  ;
+    }
+}
+
+@media(min-width:1000px){
+    .form-create-container{
+        height: 40%;
+    }
+}

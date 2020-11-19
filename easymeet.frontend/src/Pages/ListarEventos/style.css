@@ -1,0 +1,60 @@
+#page-list{
+    width: 100vw;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+#page-list h1{
+    font-weight: 500;
+    font-size: 48px;
+    margin-top: 40px;
+    margin-bottom: 40px;
+}
+
+table {
+    background: #FFF;
+    width: 80%;
+    font-weight: 400;
+    border-collapse: collapse;
+}
+.table-list th, td,tr{
+    text-align: start;
+    padding: 15px;
+}
+.table-list .head{
+    background: #4D4D4D;
+    width: 100%;
+    height: 50px;
+}
+
+.table-list .head .name, .resp{
+    width: 30%;
+}
+.table-list .head .data,.vagas{
+    width: 15%;
+}
+.table-list .head .details{
+    width: 10%;
+}
+
+.table-list tbody>tr:nth-child(even){
+    background-color: steelblue;
+}
+
+.table-list tbody>tr:nth-child(odd){
+    background-color: red;
+}
+
+@media(max-width:400px){
+    #page-list h1{
+        font-size: 36px;
+    }
+}
+
+@media(max-width:300px){
+    #page-list h1{
+        font-size: 30px;
+    }
+}
