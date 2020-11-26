@@ -8,6 +8,7 @@ export default{
             descricao: evento.descricao,
             datahorainicio: evento.datahorainicial,
             datahorafinal: evento.datahorafinal,
+            tipo: evento.tipo,
             vagas_total: evento.vagas_total,
             vagas_preenchidas: evento.vagas_preenchidas,
             responsavel: evento.responsavel,

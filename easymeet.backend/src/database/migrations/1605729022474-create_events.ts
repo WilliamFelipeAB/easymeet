@@ -29,11 +29,11 @@ export class createEvents1605729022474 implements MigrationInterface {
                 },
                 {
                     name: 'datahorainicial',
-                    type: 'datetime'
+                    type: 'date'
                 },
                 {
                     name: 'datahorafinal',
-                    type: 'datetime'
+                    type: 'date'
                 },
                 {
                     name: 'vagas_total',
